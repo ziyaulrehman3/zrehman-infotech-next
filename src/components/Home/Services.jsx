@@ -1,19 +1,14 @@
-"use client";
-
-import { useParams } from "next/navigation";
+import { Icon } from "@iconify/react";
 import Button from "components/services/Button";
-import ControllButton from "components/services/ControllButton";
-import Pricing from "components/services/Pricing";
-import Login from "components/Home/Login";
-import Header from "components/Home/Header";
+import {
+  fadeUpAnimation,
+  rightLeftAnimation,
+  leftRightAnimation,
+} from "../Animation/fadeUpAnimation";
 
-import { useState } from "react";
+import { motion } from "framer-motion";
 
-export default function ServicePage() {
-  const { slug } = useParams();
-
-  const [step, setStep] = useState(2);
-
+export default function Services() {
   const servicesList = {
     website: {
       title: "Website",
@@ -113,80 +108,44 @@ export default function ServicePage() {
       price: 12,
       documents: ["Aadhar Card", "Pan Card"],
     },
-    "msme-registration": {
-      title: "MSME Registration",
-      icon: "streamline-cyber:wedding-certificate",
-      url: "msme-registration",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
   };
 
   return (
-    <div className="bg-white h-lvh">
-      <Header />
-      <div className="bg-[#286CCA] p-2 w-full h-16 md:h-24 lg:h-28">
-        <div className="w-full h-full scrollbar-hide gap-4  lg:gap-8 flex overflow-x-auto justify-around">
+    <div id="Services" className="lg:h-lvh w-full p-8 lg:p-4 bg-white">
+      <div
+        className={` lg:h-[calc(100vh-110px)] w-full flex flex-col rounded-bl-xl rounded-tr-xl rounded-tl-xl bg-[#286CCA]`}
+      >
+        <div
+          className={`mx-auto w-[70%] lg:w-[40%] rounded-bl-[30px] rounded-br-[30px] lg:rounded-bl-[120px] lg:rounded-br-[120px] flex items-center justify-center bg-white h-10 lg:h-16`}
+        >
+          <h1 className="text-xl lg:text-3xl font-semibold  text-black">
+            Our Services
+          </h1>
+        </div>
+        <motion.div
+          {...fadeUpAnimation}
+          className="grid grid-cols-2 gap-8 lg:grid-cols-6 w-[80%] py-10 mx-auto h-full"
+        >
           {Object.keys(servicesList).map((item, index) => (
-            <Button data={servicesList[item]} key={index} slug={slug} />
+            <Button
+              data={servicesList[item]}
+              key={index}
+              slug={""}
+              flag={true}
+            />
           ))}
-        </div>
+        </motion.div>
       </div>
+      <div className="h-12 lg:h-18 w-full bg-white mt-0 pt-0 relative">
+        <div className="overflow-hidden w-[60%]   lg:w-[25%] h-full rounded-br-2xl absolute right-0 top-0">
+          <div className="flex rounded-br-xl rounded-bl-xl bg-[#286CCA] h-full gap-2 w-full skew-x-[20deg] origin-left translate-x-10"></div>
 
-      <div className="w-[90%] md:w-[70%] lg:w-[50%] h-32 mx-auto">
-        <div className="w-[80%] mx-auto h-8 grid grid-cols-15 items-center gap-1">
-          <div
-            className={`w-full lg:w-2/3 aspect-square mx-auto ${
-              step >= 1 ? "bg-[#286CCA] text-white" : "bg-gray-200 text-black"
-            }  rounded-full flex items-center justify-center text-xs lg:text-sm font-semibold`}
-          >
-            1
-          </div>
-
-          <span
-            className={`h-1 lg:h-2 col-span-6 ${
-              step >= 2 ? "bg-[#286CCA] text-white" : "bg-gray-200 text-black"
-            } rounded-full`}
-          />
-
-          <div
-            className={`w-full lg:w-2/3 mx-auto aspect-square ${
-              step >= 2 ? "bg-[#286CCA] text-white" : "bg-gray-200 text-black"
-            }  rounded-full flex items-center justify-center text-xs lg:text-sm font-semibold`}
-          >
-            2
-          </div>
-
-          <span
-            className={`h-1 lg:h-2 col-span-6 ${
-              step >= 3 ? "bg-[#286CCA] text-white" : "bg-gray-200 text-black"
-            } rounded-full`}
-          />
-
-          <div
-            className={`w-full lg:w-2/3 mx-auto  aspect-square ${
-              step >= 3 ? "bg-[#286CCA] text-white" : "bg-gray-200 text-black"
-            }  rounded-full flex items-center justify-center text-xs lg:text-sm font-semibold`}
-          >
-            3
-          </div>
-        </div>
-
-        <div className="w-full px-[10%] flex flex-col justify-between py-4 h-96 overflow-hidden bg-[#FBFBFB] rounded-3xl border-gray-200 border-[1px]">
-          {servicesList[slug] && <Pricing data={servicesList[slug]} />}
-
-          <div className="w-full h-8 lg:h-12 mx-auto flex justify-between">
-            <ControllButton
-              type={true}
-              title="Cancel"
-              className="w-[25%] h-full"
+          <div className="absolute top-0 right-0 flex gap-2 text-xs ml-16 lg:ml-0 lg:text-lg items-center h-full">
+            <Icon
+              icon="lineicons:scroll-down-2"
+              className="text-lg lg:text-4xl"
             />
-            <ControllButton
-              type={false}
-              title="Next"
-              className="w-[25%] h-full"
-            />
+            <p className="w-[80%] lg:w-[50%]">Scroll down to discover more</p>
           </div>
         </div>
       </div>
