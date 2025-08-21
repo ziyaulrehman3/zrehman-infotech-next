@@ -45,6 +45,7 @@ export default function Partnership() {
         >
           Partnership Program
         </motion.h2>
+
         <motion.p
           {...fadeUpAnimation}
           className="w-full lg:w-[40%]  text-center"
@@ -55,16 +56,18 @@ export default function Partnership() {
       </div>
 
       <div className="w-full h-[80%] grid grid-cols-1 lg:grid-cols-2 justify-around gap-4 lg:gap-0">
-        <motion.div
-          {...leftRightAnimation}
-          className="w-full flex flex-col gap-2 h-full"
-        >
+        <motion.div className="w-full flex flex-col gap-2 h-full">
           <h1 className="text-center font-semibold text-xl">
             Partnership Benefits
           </h1>
           <div className="w-full grid grid-rows-4 gap-4">
             {benefitsList.map((item, index) => (
-              <Benefits key={index} title={item.title} desc={item.desc} />
+              <Benefits
+                index={index}
+                key={index}
+                title={item.title}
+                desc={item.desc}
+              />
             ))}
           </div>
         </motion.div>

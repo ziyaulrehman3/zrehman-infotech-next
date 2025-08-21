@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import Button from "components/services/Button";
-import ControllButton from "components/services/ControllButton";
+import { ControllButton } from "components/services/ControllButton";
 import Pricing from "components/services/Pricing";
 import Login from "components/Home/Login";
 import Header from "components/Home/Header";

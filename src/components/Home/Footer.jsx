@@ -35,8 +35,12 @@ export default function Footer() {
       <div className="lg:col-span-2  gap-2 p-4 lg:border-r-[1px] border-white">
         <ul className="gap-4 flex flex-col">
           {["About Us", "Services", "Become Partner", "Contact Us"].map(
-            (item) => {
-              return <li>{item}</li>;
+            (item, index) => {
+              return (
+                <a href={"#" + item.split(" ").join("")}>
+                  <li key={index}>{item}</li>
+                </a>
+              );
             }
           )}
         </ul>

@@ -81,13 +81,29 @@ export default function ContactUs() {
 
           <div className="col-span-1 lg:col-span-3 bg-white lg:h-full rounded-lg grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-5 p-4 gap-4">
             <InputUnderline
+              key="key1"
               name="firstName"
               placeholder=""
               label="First Name"
             />
-            <InputUnderline name="lastName" placeholder="" label="Last Name" />
-            <InputUnderline name="email" placeholder="" label="Email" />
-            <InputUnderline name="phone" placeholder="" label="Phone Number" />
+            <InputUnderline
+              key="key2"
+              name="lastName"
+              placeholder=""
+              label="Last Name"
+            />
+            <InputUnderline
+              key="key3"
+              name="email"
+              placeholder=""
+              label="Email"
+            />
+            <InputUnderline
+              key="key4"
+              name="phone"
+              placeholder=""
+              label="Phone Number"
+            />
             <div className="lg:col-span-2">
               <h1>Select Subject?</h1>
               <div className="flex flex-col lg:flex-row gap-4">

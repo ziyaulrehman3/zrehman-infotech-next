@@ -1,6 +1,7 @@
 import { GoDash } from "react-icons/go";
 import ButtonNormal from "components/Extra/ButtonNormal";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   fadeUpAnimation,
@@ -56,7 +57,7 @@ export default function AboutUs() {
             className="flex gap-2 lg:gap-4 relative items-center  rounded-xl col-span-4 col-start-5 row-start-6 overflow-hidden rounded-xl row-span-2"
           >
             <div className="w-1/2 bg-[#B8E7E9] text-[#286CCA] aspect-square text-lg rounded-2xl lg:text-6xl flex items-center justify-center font-semibold">
-              5+
+              3+
             </div>
             <h1 className="text-black text-lg lg:text-2xl font-semibold">
               Year Experince
@@ -83,17 +84,19 @@ export default function AboutUs() {
           {...fadeUpAnimation}
           className="w-full lg:w-[80%] text-justify"
         >
-          We’re a multi-service consultancy helping businesses thrive in the
-          digital era. From app and web development to digital signatures, GST
-          registration, and insurance services, we deliver smart, secure, and
-          scalable solutions that meet your unique needs. <br />
+          We’re a software development company helping businesses thrive in the
+          digital era. From custom web and mobile app development to cloud
+          solutions, scalable software, and digital tools, we deliver smart,
+          secure, and tailored services that meet your unique needs. <br />
           <br />
-          With over 8+ years of experience, our team is committed to helping
+          With over 3 years of experience, our team is committed to helping
           startups, freelancers, and enterprises grow faster, work smarter, and
-          stay compliant.
+          succeed in the digital world.
         </motion.p>
         <motion.div {...leftRightAnimation}>
-          <ButtonNormal text="Learn More" />
+          <Link href="/services">
+            <ButtonNormal text="Learn More" />
+          </Link>
         </motion.div>
       </div>
     </div>

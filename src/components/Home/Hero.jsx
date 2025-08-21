@@ -39,9 +39,9 @@ export default function Hero() {
                 transition={{ delay: 0.8 }}
                 className="w-full lg:w-[80%] text-base"
               >
-                We help you build and grow your business with expert app & web
-                development, digital signature services, GST registration,
-                insurance support, and more.
+                We help you build and grow your business with expert web and app
+                development, custom software solutions, and digital tools
+                tailored to your needs.
               </motion.p>
               <motion.div {...leftRightAnimation}>
                 <Link href="services">

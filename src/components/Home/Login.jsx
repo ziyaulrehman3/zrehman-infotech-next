@@ -1,6 +1,8 @@
 import InputFiled from "components/services/InputFiled";
-import ControllButton from "components/services/ControllButton";
-import ControllGoogle from "components/services/ControllButton";
+import {
+  ControllButton,
+  ControllGoogle,
+} from "components/services/ControllButton";
 import { IoIosCloseCircle } from "react-icons/io";
 
 export default function Login({ setLoginFlag, loginFlag }) {

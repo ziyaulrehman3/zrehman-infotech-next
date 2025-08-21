@@ -37,9 +37,10 @@ export default function Form() {
     <div className=" flex flex-col gap-2 bg-blue-100 rounded-xl p-4 w-full lg:w-[70%] mx-auto">
       {fieldsList.map((field, index) => {
         return (
-          <div className="flex flex-col gap-[2px] w-[90%] mx-auto">
+          <div key={index} className="flex flex-col gap-[2px] w-[90%] mx-auto">
             <label className="text-sm text-[#666666]">{field.title}</label>
             <input
+              key={index}
               name={field.name}
               placeholder={field.placeholder}
               className="w-full h-8 bg-white rounded-md px-2 border-[1px] border-[#CCCCCC]"
