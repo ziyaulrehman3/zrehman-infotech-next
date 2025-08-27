@@ -6,21 +6,29 @@ import AboutUs from "components/Home/AboutUs";
 import Services from "components/Home/Services";
 import Partnership from "components/Home/Partnership";
 import ContactUs from "components/Home/ContactUs";
-import Footer from "components/Home/Footer";
+import Vision from "components/Home/Vision";
+import Transform from "components/Home/Transform";
+import TechnologyServices from "components/Home/TechnologyServices";
+import Feedbacks from "components/Home/Feedbacks";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
   return (
     <div className="w-full overflow-x-hidden">
       <Hero />
-      <AboutUs />
-      <Services />
-      <Partnership />
-      <ContactUs />
-      <Footer />
+      {/* <AboutUs /> */}
+      <Vision />
+
+      <TechnologyServices />
+      {/* <Services /> */}
+      {/* <Partnership /> */}
+      {/* <ContactUs /> */}
+      <Feedbacks />
+      <Transform />
     </div>
   );
 }

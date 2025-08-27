@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import ButtonNormal from "components/Extra/ButtonNormal";

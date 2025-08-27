@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 export default function Services() {
   const servicesList = {
     website: {
-      title: "Website",
+      title: "Website Development",
       icon: "fluent-mdl2:website",
       url: "website",
       description:
@@ -20,7 +20,7 @@ export default function Services() {
       documents: ["Aadhar Card", "Pan Card"],
     },
     "android-app": {
-      title: "Android App",
+      title: "Android Mobile Application",
       icon: "ri:android-line",
       url: "android-app",
       description: "Create a website for your business",
@@ -28,7 +28,7 @@ export default function Services() {
       documents: ["Aadhar Card", "Pan Card", "Aadhar Card", "Pan Card"],
     },
     "ios-app": {
-      title: "iOS App",
+      title: "iOS Mobile Application",
       icon: "lineicons:ios",
       url: "ios-app",
       description: "Create a website for your business",

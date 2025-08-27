@@ -64,7 +64,7 @@ export default function Hero() {
 
               <motion.h1
                 {...rightLeftAnimation}
-                className="-rotate-90 opacity-50 absolute -right-16 lg:-right-55 font-semibold top-16 lg:top-50 text-5xl lg:text-8xl"
+                className="-rotate-90 opacity-20 absolute -right-16 lg:-right-55 font-semibold top-16 lg:top-50 text-5xl lg:text-8xl"
               >
                 Consult
               </motion.h1>
