@@ -5,8 +5,8 @@ import { useState } from "react";
 export default function Header({ setLoginFlag }) {
   const [selectedButton, setSelectedButton] = useState("Home");
   return (
-    <div className="h-8 lg:h-12 flex justify-between bg-[#286CCA] ">
-      <div className="w-18 aspect-[3/2] relative hidden lg:block">
+    <div className="h-8 lg:h-12 flex justify-between bg-[#286CCA] items-center">
+      <div className="h-6 lg:h-10 aspect-[3/2] relative hidden lg:block">
         <Image
           src="/Images/logo.png"
           alt="Logo"
@@ -15,7 +15,7 @@ export default function Header({ setLoginFlag }) {
         />
       </div>
 
-      <div className="w-[60%] bg-white mx-auto  [clip-path:polygon(0_0,100%_0,85%_100%,15%_100%)]">
+      <div className="h-full w-[60%] bg-white mx-auto  [clip-path:polygon(0_0,100%_0,85%_100%,15%_100%)]">
         <div className="w-[70%] lg:flex gap-2 justify-around mx-auto text-sm pt-2 hidden">
           {["Home", "About Us", "Services", "Become Partner", "Contact Us"].map(
             (item, index) => (
