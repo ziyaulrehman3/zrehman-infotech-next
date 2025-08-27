@@ -24,7 +24,7 @@ export default function Home() {
       <Vision />
 
       <TechnologyServices />
-      {/* <Services /> */}
+      <Services />
       {/* <Partnership /> */}
       {/* <ContactUs /> */}
       <Feedbacks />

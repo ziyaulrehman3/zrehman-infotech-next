@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { M_PLUS_Rounded_1c } from "next/font/google";
+import Link from "next/link";
 
 const MPLUSRounded1c = M_PLUS_Rounded_1c({
   subsets: ["latin"],
@@ -46,23 +47,32 @@ export default function TechnologyServices() {
       >
         Innovative solutions to accelerate your business growth
       </h1>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-16 relative">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-16 relative">
         <p className="lg:absolute top-0 left-0 text-lg lg:w-1/2 font-base pt-2 text-center lg:text-start">
           Stay ahead of the curve with next-gen solutions designed to unlock new
           growth opportunities, enhance operational efficiency, and fuel
           continuous innovation across every aspect of your business.
         </p>
-        <div className="flex flex-col gap-8 justify-center">
+        <div className="flex flex-col gap-4 lg:gap-8 justify-center">
           <ServiceCard data={servicesList[0]} />
         </div>
-        <div className="flex flex-col gap-8 justify-center">
+        <div className="flex flex-col gap-4 lg:gap-8 justify-center">
           <ServiceCard data={servicesList[1]} />
           <ServiceCard data={servicesList[2]} />
         </div>
-        <div className="flex flex-col gap-8 justify-center">
+        <div className="flex flex-col gap-4 lg:gap-8 justify-center">
           <ServiceCard data={servicesList[3]} />
           <ServiceCard data={servicesList[4]} />
           <ServiceCard data={servicesList[5]} />
+        </div>
+
+        <div className="lg:absolute bottom-0 left-0 flex flex-col lg:flex-row gap-2">
+          <p>Need custom service that aligns your business objectives?</p>
+          <Link href="/Services">
+            <p className="inline font-semibold border-b-2 border-black pb-[0.5px] hover:text-[#286CCA] hover:brightness-110 transition-all hover:border-white">
+              Book a free Consultation
+            </p>
+          </Link>
         </div>
       </div>
     </div>
@@ -71,7 +81,7 @@ export default function TechnologyServices() {
 
 function ServiceCard({ data }) {
   return (
-    <div className="group w-full aspect-[7/4] border-[1px] rounded-xl border-black text-black  p-6 flex gap-4 grid grid-cols-4 hover:scale-105 hover:bg-blue-50 duration-500 translate-all text-black">
+    <div className="group w-full aspect-[7/4] border-[1px] rounded-xl border-black text-black p-4  flex gap-4 grid grid-cols-4 hover:scale-105 hover:bg-blue-50 duration-500 translate-all text-black">
       <div className="aspect-square rounded-xl bg-[#286CCA] group-hover:bg-white text-3xl lg:text-5xl flex items-center justify-center text-white group-hover:text-[#286CCA] transition-all">
         <Icon icon={data.icon} />
       </div>
