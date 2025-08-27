@@ -1,3 +1,5 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import { fadeUpAnimation } from "components/Animation/fadeUpAnimation";
 import { motion } from "framer-motion";

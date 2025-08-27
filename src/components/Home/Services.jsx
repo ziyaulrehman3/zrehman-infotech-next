@@ -1,3 +1,5 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import Button from "components/services/Button";
 import {
@@ -10,64 +12,6 @@ import { motion } from "framer-motion";
 
 export default function Services() {
   const servicesList = {
-    website: {
-      title: "Website Development",
-      icon: "fluent-mdl2:website",
-      url: "website",
-      description:
-        "Create a website for your business Create a website for your business Create a website for your business Create a website for your businessCreate a website for your businessCreate a website for your businessCreate a website for your businessCreate a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
-    "android-app": {
-      title: "Android Mobile Application",
-      icon: "ri:android-line",
-      url: "android-app",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card", "Aadhar Card", "Pan Card"],
-    },
-    "ios-app": {
-      title: "iOS Mobile Application",
-      icon: "lineicons:ios",
-      url: "ios-app",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
-    "website-maintenance": {
-      title: "Website Maintenance",
-      icon: "streamline-freehand:website-development-browser-hand",
-      url: "website-maintenance",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
-    "logo-design": {
-      title: "Logo Design",
-      icon: "fluent:design-ideas-20-regular",
-      url: "logo-design",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
-    "ui-ux": {
-      title: "UI/UX Designing",
-      icon: "carbon:gui",
-      url: "ui-ux",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
-
-    "poster-designing": {
-      title: "Poster Designing",
-      icon: "bi:postage",
-      url: "poster-designing",
-      description: "Create a website for your business",
-      price: 12,
-      documents: ["Aadhar Card", "Pan Card"],
-    },
     insurance: {
       title: "Insurance",
       icon: "streamline-ultimate:insurance-hand",
@@ -108,18 +52,26 @@ export default function Services() {
       price: 12,
       documents: ["Aadhar Card", "Pan Card"],
     },
+    "fssai-certification": {
+      title: "FSSAI Certification",
+      icon: "streamline:bag-rupee",
+      url: "income-tax-return",
+      description: "Create a website for your business",
+      price: 12,
+      documents: ["Aadhar Card", "Pan Card"],
+    },
   };
 
   return (
-    <div id="Services" className="lg:h-lvh w-full p-8 lg:p-4 bg-white">
+    <div id="Services" className="w-full px-8 py-12 lg:px-4 bg-white">
       <div
-        className={` lg:h-[calc(100vh-110px)] w-full flex flex-col rounded-bl-xl rounded-tr-xl rounded-tl-xl bg-[#286CCA]`}
+        className={`  w-full flex flex-col rounded-bl-xl rounded-tr-xl rounded-tl-xl bg-[#286CCA]`}
       >
         <div
           className={`mx-auto w-[70%] lg:w-[40%] rounded-bl-[30px] rounded-br-[30px] lg:rounded-bl-[120px] lg:rounded-br-[120px] flex items-center justify-center bg-white h-10 lg:h-16`}
         >
           <h1 className="text-xl lg:text-3xl font-semibold  text-black">
-            Our Services
+            Digital Services
           </h1>
         </div>
         <motion.div
@@ -136,6 +88,7 @@ export default function Services() {
           ))}
         </motion.div>
       </div>
+
       <div className="h-12 lg:h-18 w-full bg-white mt-0 pt-0 relative">
         <div className="overflow-hidden w-[60%]   lg:w-[25%] h-full rounded-br-2xl absolute right-0 top-0">
           <div className="flex rounded-br-xl rounded-bl-xl bg-[#286CCA] h-full gap-2 w-full skew-x-[20deg] origin-left translate-x-10"></div>

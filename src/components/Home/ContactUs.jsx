@@ -1,3 +1,5 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import ButtonNormal from "components/Extra/ButtonNormal";
 import InputUnderline from "components/Extra/InputUnderline";
