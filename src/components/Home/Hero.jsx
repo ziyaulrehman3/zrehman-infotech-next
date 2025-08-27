@@ -7,6 +7,7 @@ import Header from "components/Home/Header";
 import ButtonNormal from "components/Extra/ButtonNormal";
 import Login from "components/Home/Login";
 import { useState } from "react";
+import { Knewave } from "next/font/google";
 import {
   fadeUpAnimation,
   rightLeftAnimation,
@@ -15,8 +16,14 @@ import {
 
 import { motion, useInView } from "framer-motion";
 
+const knewave = Knewave({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function Hero() {
   const [loginFlag, setLoginFlag] = useState(false);
+
   return (
     <div className="lg:h-lvh   p-4 bg-white" id="Home">
       <Login setLoginFlag={setLoginFlag} loginFlag={loginFlag} />
@@ -29,7 +36,7 @@ export default function Hero() {
             <div className="w-full lg:w-[60%] gap-6 flex flex-col  items-start py-4 lg:py-0">
               <motion.h1
                 {...fadeUpAnimation}
-                className="text-3xl lg:text-7xl leading-10 lg:leading-20 font-bold text-white"
+                className={` ${knewave.className} text-3xl lg:text-7xl leading-12 lg:leading-24  text-white  `}
               >
                 Empowering Your Business with Smart Digital{" "}
                 <span className="px-2 text-[#286CCA] bg-white">Solutions</span>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import Button from "components/services/Button";
 import {
@@ -61,7 +63,7 @@ export default function Services() {
   };
 
   return (
-    <div id="Services" className="w-full p-8 lg:p-4 bg-white">
+    <div id="Services" className="w-full px-8 py-12 lg:px-4 bg-white">
       <div
         className={`  w-full flex flex-col rounded-bl-xl rounded-tr-xl rounded-tl-xl bg-[#286CCA]`}
       >

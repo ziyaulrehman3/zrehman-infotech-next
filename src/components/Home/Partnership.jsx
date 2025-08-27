@@ -1,3 +1,5 @@
+"use client";
+
 import { GoDash } from "react-icons/go";
 import Benefits from "components/Home/Benefits";
 import Form from "components/Home/Form";

@@ -1,3 +1,5 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import { M_PLUS_Rounded_1c } from "next/font/google";
 import Link from "next/link";

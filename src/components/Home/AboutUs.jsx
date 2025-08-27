@@ -1,3 +1,5 @@
+"use client";
+
 import { GoDash } from "react-icons/go";
 import ButtonNormal from "components/Extra/ButtonNormal";
 import Image from "next/image";
