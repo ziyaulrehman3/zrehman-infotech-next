@@ -1,7 +1,6 @@
 import Transform from "components/Home/Transform";
 import AboutUs from "components/Home/AboutUs";
 import { M_PLUS_Rounded_1c } from "next/font/google";
-import Link from "next/link";
 import Header from "components/Home/Header";
 
 const MPLUSRounded1c = M_PLUS_Rounded_1c({
