@@ -43,7 +43,10 @@ export default function TechnologyServices() {
     },
   ];
   return (
-    <div className="w-full py-12 px-6 lg:px-12  lg:py-20 text-black bg-white">
+    <div
+      id="Services"
+      className="w-full py-12 px-6 lg:px-12  lg:py-20 text-black bg-white"
+    >
       <h1
         className={`text-3xl lg:text-5xl font-bold w-full lg:w-[70%] text-center lg:text-start text-transparent bg-gradient-to-br from-[#286CCA] to-black bg-clip-text py-2 ${MPLUSRounded1c.className}`}
       >
@@ -83,8 +86,8 @@ export default function TechnologyServices() {
 
 function ServiceCard({ data }) {
   return (
-    <div className="group w-full aspect-[7/4] border-[1px] rounded-xl border-black text-black p-4  flex gap-4 grid grid-cols-4 hover:scale-105 hover:bg-blue-50 duration-500 translate-all text-black">
-      <div className="aspect-square rounded-xl bg-[#286CCA] group-hover:bg-white text-3xl lg:text-5xl flex items-center justify-center text-white group-hover:text-[#286CCA] transition-all">
+    <div className="group w-full aspect-[7/4] border-[1px] rounded-xl border-black text-black p-4  flex gap-4 grid grid-cols-4 hover:scale-105 hover:bg-[#035fff] duration-500 translate-all text-black hover:text-white">
+      <div className="aspect-square rounded-xl bg-[#035fff] group-hover:bg-white text-3xl lg:text-5xl flex items-center justify-center text-white group-hover:text-[#286CCA] transition-all">
         <Icon icon={data.icon} />
       </div>
       <div className="col-span-3 flex flex-col gap-2">

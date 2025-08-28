@@ -14,10 +14,7 @@ import {
 
 export default function AboutUs() {
   return (
-    <div
-      id="AboutUs"
-      className="lg:h-lvh p-8 lg:p-4 bg-white grid grid-cols-1 md:grid-cols-2"
-    >
+    <div className="lg:h-lvh p-8 lg:p-4 bg-white grid grid-cols-1 md:grid-cols-2">
       <div className="h-full">
         <div className="grid grid-cols-8 grid-rows-8 w-full lg:w-[80%] mx-auto h-full gap-4">
           <motion.div

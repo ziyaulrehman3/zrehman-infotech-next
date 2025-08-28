@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Hero from "components/Home/Hero";
-import AboutUs from "components/Home/AboutUs";
 import Services from "components/Home/Services";
 import Partnership from "components/Home/Partnership";
 import ContactUs from "components/Home/ContactUs";
@@ -27,7 +26,6 @@ export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
       <Hero />
-      {/* <AboutUs /> */}
       <Vision />
 
       <TechnologyServices />
