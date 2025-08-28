@@ -30,10 +30,10 @@ export default function Feedback() {
   return (
     <div className="bg-white text-black w-full py-6 px-6 lg:px-12">
       <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 justify-between text-center lg:text-start">
-        <h1 className="text-3xl lg:text-5xl font-semibold w-full lg:w-[30%]">
+        <h1 className="text-3xl lg:text-5xl font-semibold w-full lg:w-[30%] bg-gradient-to-br from-[#035fff] to-black text-transparent bg-clip-text">
           Feedback That Drives Success
         </h1>
-        <p className="w-full  lg:w-[40%]">
+        <p className="w-full  lg:w-[40%] font-semibold">
           Hear from clients about their success, experiences, and how our
           solutions fueled growth.
         </p>

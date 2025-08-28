@@ -52,9 +52,9 @@ export default function Services() {
       price: 12,
       documents: ["Aadhar Card", "Pan Card"],
     },
-    "fssai-certification": {
-      title: "FSSAI Certification",
-      icon: "streamline:bag-rupee",
+    "msme-certification": {
+      title: "MSME Certification",
+      icon: "streamline-cyber:factory",
       url: "income-tax-return",
       description: "Create a website for your business",
       price: 12,
@@ -63,7 +63,7 @@ export default function Services() {
   };
 
   return (
-    <div id="Services" className="w-full px-8 py-12 lg:px-4 bg-white">
+    <div id="DigitalServices" className="w-full px-8 py-12 lg:px-4 bg-white">
       <div
         className={`  w-full flex flex-col rounded-bl-xl rounded-tr-xl rounded-tl-xl bg-[#286CCA]`}
       >

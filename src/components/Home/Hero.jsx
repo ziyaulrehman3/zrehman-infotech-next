@@ -8,6 +8,7 @@ import ButtonNormal from "components/Extra/ButtonNormal";
 import Login from "components/Home/Login";
 import { useState } from "react";
 import { Knewave } from "next/font/google";
+
 import {
   fadeUpAnimation,
   rightLeftAnimation,

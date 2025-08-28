@@ -22,20 +22,20 @@ export default function Vision() {
           designed to boost your business and achieve growth.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="border-[1px] border-black bg-blue-50 rounded-xl p-6 flex flex-col gap-2">
+          <div className=" bg-[#035fff] text-white rounded-xl p-6 flex flex-col gap-2">
             <span className="flex gap-1">
               <h1 className="text-5xl font-bold">30</h1>
               <p className="text-3xl">+</p>
             </span>
-            <p className="text-gray-600">Projects Delivered</p>
+            <p className="">Projects Delivered</p>
           </div>
 
-          <div className="border-[1px] border-black bg-blue-50 rounded-xl p-6 flex flex-col gap-2">
+          <div className=" bg-[#035fff] text-white rounded-xl p-6 flex flex-col gap-2">
             <span className="flex gap-1">
               <h1 className="text-5xl font-bold">12</h1>
               <p className="text-3xl">+</p>
             </span>
-            <p className="text-gray-600">Happy Clients</p>
+            <p className="">Happy Clients</p>
           </div>
         </div>
       </div>
