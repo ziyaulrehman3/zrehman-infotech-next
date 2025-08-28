@@ -45,7 +45,10 @@ export default function AboutUsMain() {
               value: 3,
             },
           ].map((item, index) => (
-            <div className=" bg-[#035fff] text-white rounded-xl p-6 flex flex-col gap-2">
+            <div
+              key={index}
+              className=" bg-[#035fff] text-white rounded-xl p-6 flex flex-col gap-2"
+            >
               <span className="flex gap-1">
                 <h1 className="text-5xl font-bold">{item.value}</h1>
                 <p className="text-3xl">+</p>
