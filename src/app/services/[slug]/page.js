@@ -6,6 +6,7 @@ import { ControllButton } from "components/services/ControllButton";
 import Pricing from "components/services/Pricing";
 import Login from "components/Home/Login";
 import Header from "components/Home/Header";
+import Link from "next/link";
 
 import { useState } from "react";
 
