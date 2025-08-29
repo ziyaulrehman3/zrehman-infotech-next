@@ -4,19 +4,22 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Header({ setLoginFlag }) {
   const [selectedButton, setSelectedButton] = useState("Home");
   return (
-    <div className="h-8 lg:h-12 flex justify-between bg-[#286CCA] items-center">
-      <div className="h-6 lg:h-10 aspect-[3/2] relative hidden lg:block">
-        <Image
-          src={`/Images/logo.png`}
-          alt="Logo"
-          fill
-          className="object-cover"
-        />
-      </div>
+    <div className="h-8 lg:h-12 flex justify-between bg-[#286CCA] items-center w-full px-4 lg:px-14 lg:mt-2">
+      <Link href="/">
+        <div className="h-6 lg:h-10 aspect-[3/2] relative hidden lg:block">
+          <Image
+            src={`/Images/logo.png`}
+            alt="Logo"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </Link>
 
       <button
         onClick={() => setLoginFlag(true)}
@@ -34,9 +37,13 @@ export default function Header({ setLoginFlag }) {
             "Digital Services",
             "Contact Us",
           ].map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={`${item == "Home" ? "/" : "#" + item.split(" ").join("")}`}
+              href={`${
+                item == "Home"
+                  ? "/"
+                  : "/" + item.split(" ").join("-").toLowerCase()
+              }`}
             >
               <button
                 onClick={() => setSelectedButton(item)}
@@ -55,7 +62,7 @@ export default function Header({ setLoginFlag }) {
                   }`}
                 />
               </button>
-            </a>
+            </Link>
           ))}
         </div>
         <div className="w-10 lg:w-18 aspect-[3/2] relative  lg:hidden mx-auto">
@@ -68,10 +75,7 @@ export default function Header({ setLoginFlag }) {
         </div>
       </div>
 
-      <button
-        onClick={() => setLoginFlag(true)}
-        className="flex gap-1 cursor-pointer hover:brightness-110 hover:shadow-md text-white bg-[#FE743C] self-center items-center justify-center text-sm lg:text-lg font-semibold rounded-full w-28 h-6 lg:h-10"
-      >
+      <button className="flex gap-1 cursor-pointer hover:brightness-110 hover:shadow-md text-white bg-[#FE743C] self-center items-center justify-center text-sm lg:text-lg font-semibold rounded-full w-28 h-6 lg:h-10">
         <Icon icon="iconamoon:profile" className="text-xl" />
         <span>Login</span>
       </button>

@@ -8,6 +8,11 @@ export default function Form() {
       name: "name",
     },
     {
+      title: "Contact No",
+      placeholder: "Enter Contact No",
+      name: "contactNo",
+    },
+    {
       title: "Email Address",
       placeholder: "Enter email",
       name: "email",
@@ -17,20 +22,16 @@ export default function Form() {
       placeholder: "Enter company",
       name: "companyName",
     },
+
     {
-      title: "Partnership Type",
-      placeholder: "Enter type",
-      name: "partnershipType",
+      title: "Which Services you want?",
+      placeholder: "Enter Service",
+      name: "service",
     },
     {
-      title: "Year of Experience",
-      placeholder: "Enter experience",
-      name: "experience",
-    },
-    {
-      title: "Tell us about your business",
-      placeholder: "Describe your business",
-      name: "describe",
+      title: "Comment/Question",
+      placeholder: "Describe your message",
+      name: "message",
     },
   ];
   return (

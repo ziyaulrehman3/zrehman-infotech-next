@@ -14,7 +14,7 @@ export default function Transform() {
           Solutions, and a Shared Vision—Let’s Build Lasting Success Together
         </p>
 
-        <Link href="services ">
+        <Link href="/contact-us">
           <ButtonNormal text="Get Started" />
         </Link>
       </div>

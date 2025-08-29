@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 export default function Button({ data, slug, flag = false }) {
   return (
     <Link
-      href={`/services/${data.url}`}
+      href={`/digital-services/${data.url}`}
       className={`flex flex-col gap-1 lg:gap-2 items-center w-full ibm-plex-sans-font  flex-shrink-0 aspect-[3/4]  rounded-lg lg:rounded-xl p-1 lg:p-2 ${
         slug == data.url || flag ? "bg-white/40" : ""
       } overflow-hidden`}

@@ -30,10 +30,12 @@ export default function Hero() {
       <Login setLoginFlag={setLoginFlag} loginFlag={loginFlag} />
 
       <div className="h-full w-full flex flex-col rounded-xl">
-        <div className="w-full lg:h-[calc(100vh-18px)] px-[5%] bg-[#286CCA] rounded-br-2xl rounded-tr-2xl rounded-tl-2xl">
-          <Header setLoginFlag={setLoginFlag} />
+        <div className="w-full lg:h-[calc(100vh-18px)]  bg-[#286CCA] rounded-br-2xl rounded-tr-2xl rounded-tl-2xl overflow-hidden">
+          <div className="lg:-mt-2">
+            <Header setLoginFlag={setLoginFlag} />
+          </div>
 
-          <div className="flex flex-col lg:flex-row w-full lg:h-[calc(100%-48px)] items-center">
+          <div className="flex px-[5%] flex-col lg:flex-row w-full lg:h-[calc(100%-48px)] items-center">
             <div className="w-full lg:w-[60%] gap-6 flex flex-col  items-start py-4 lg:py-0">
               <motion.h1
                 {...fadeUpAnimation}
@@ -79,7 +81,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="h-12 lg:h-18 w-full bg-white mt-0 pt-0 relative">
+        <div className="h-12  lg:h-18 w-full bg-white mt-0 pt-0 relative">
           <div className="overflow-hidden w-[50%] lg:w-[25%] h-full rounded-bl-2xl">
             <div className="flex rounded-bl-xl rounded-br-xl bg-[#286CCA] h-full gap-2 w-full skew-x-[-20deg] origin-right -translate-x-10"></div>
 
