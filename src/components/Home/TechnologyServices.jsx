@@ -73,7 +73,7 @@ export default function TechnologyServices() {
 
         <div className="lg:absolute bottom-0 left-0 flex flex-col lg:flex-row gap-2">
           <p>Need custom service that aligns your business objectives?</p>
-          <Link href="/Services">
+          <Link href="/contact-us">
             <p className="inline font-semibold border-b-2 border-black pb-[0.5px] hover:text-[#286CCA] hover:brightness-110 transition-all hover:border-white">
               Book a free Consultation
             </p>

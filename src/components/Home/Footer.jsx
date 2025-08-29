@@ -3,19 +3,22 @@
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import ButtonNormal from "components/Extra/ButtonNormal";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <div className="w-full grid grid-cols-1 lg:grid-cols-8 lg:min-h-32 bg-[#286CCA] py-4 px-8">
       <div className="lg:col-span-3 flex flex-col gap-4 lg:gap-2 p-4 lg:border-r-[1px] border-white">
-        <div className="w-[30%] lg:w-[20%] aspect-[3/2] relative mx-auto lg:mx-0">
-          <Image
-            src="/Images/logo.png"
-            alt="Logo"
-            fill
-            className="object-cover"
-          />
-        </div>
+        <Link href="/">
+          <div className="w-[30%] lg:w-[20%] aspect-[3/2] relative mx-auto lg:mx-0">
+            <Image
+              src="/Images/logo.png"
+              alt="Logo"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </Link>
         <div className="flex flex-col gap-2">
           <h1 className="flex gap-4 items-center text-base">
             <Icon icon="material-symbols-light:call-sharp" />
@@ -44,9 +47,9 @@ export default function Footer() {
             "Career",
           ].map((item, index) => {
             return (
-              <a href={"#" + item.split(" ").join("")}>
+              <Link href={"/" + item.split(" ").join("-").toLowerCase()}>
                 <li key={index}>{item}</li>
-              </a>
+              </Link>
             );
           })}
         </ul>
@@ -56,7 +59,7 @@ export default function Footer() {
           <h1 className="text-lg lg:text-2xl w-[70%]">
             Would like to talk about your future project?
           </h1>
-          <ButtonNormal text="Get in touch" />
+          <ButtonNormal text="Get in touch" url="/contact-us" />
         </div>
         <div className="flex flex-col md:flex-row justify-between gap-2">
           <p>© 2025 All rights reserved</p>

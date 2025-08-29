@@ -11,7 +11,9 @@ const MPLUSRounded1c = M_PLUS_Rounded_1c({
 export default function AboutUsMain() {
   return (
     <>
-      <Header />
+      <div className="pb-2 bg-[#286CCA]">
+        <Header />
+      </div>
 
       <div className="w-full py-12 px-6 lg:px-12  lg:py-20 text-black bg-white">
         <h1

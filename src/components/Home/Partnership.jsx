@@ -36,7 +36,7 @@ export default function Partnership() {
       id="BecomePartner"
       className="lg:h-lvh w-full p-8 lg:p-8 bg-white text-black flex flex-col gap-2"
     >
-      <h1 className="text-[#286CCA] flex gap-1 text-lg lg:text-xl items-center font-semibold">
+      {/* <h1 className="text-[#286CCA] flex gap-1 text-lg lg:text-xl items-center font-semibold">
         <GoDash className="font-bold text-3xl" />
         <span>About Us</span>
       </h1>
@@ -55,13 +55,11 @@ export default function Partnership() {
           Join our exclusive partner network and unlock new revenue streams
           while providing exceptional value to your clients.
         </motion.p>
-      </div>
+      </div> */}
 
       <div className="w-full h-[80%] grid grid-cols-1 lg:grid-cols-2 justify-around gap-4 lg:gap-0">
-        <motion.div className="w-full flex flex-col gap-2 h-full">
-          <h1 className="text-center font-semibold text-xl">
-            Partnership Benefits
-          </h1>
+        <motion.div className="w-full flex flex-col gap-2 h-full ">
+          <h1 className="text-center font-semibold text-xl">Your Benefits</h1>
           <div className="w-full grid grid-rows-4 gap-4">
             {benefitsList.map((item, index) => (
               <Benefits
@@ -77,9 +75,7 @@ export default function Partnership() {
           {...rightLeftAnimation}
           className="w-full flex flex-col gap-2 h-full"
         >
-          <h1 className="text-center font-semibold text-xl">
-            Apply for Partnership
-          </h1>
+          <h1 className="text-center font-semibold text-xl">Lets Connect</h1>
           <Form />
         </motion.div>
       </div>

@@ -23,12 +23,12 @@ export function ControllGoogle({ type, title, className }) {
           : "text-white bg-[#286CCA] hover:brightness-110"
       }  cursor-pointer rounded-xl flex justify-center items-center gap-2  text-base lg:text-lg ibm-plex-sans-font ${className}`}
     >
-      <div className="h-6 aspect-square relative rounded-full">
+      <div className="h-6 aspect-square relative rounded-full bg-transparent">
         <Image
           src="/Images/google.png"
           alt="google icon"
           fill
-          className="object-cover rounded-full"
+          className="object-cover rounded-full bg-transparent"
         />
       </div>
       <span>{title}</span>

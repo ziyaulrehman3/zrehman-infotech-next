@@ -4,25 +4,25 @@ export default function Feedback() {
   const dataSet = [
     {
       message:
-        "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "Working with Z-Rehman Infotech has been an absolutely seamless experience. Their team took the time to thoroughly understand our requirements and delivered a high-quality solution well within the agreed timeline. Communication was prompt and professional at every stage. Truly reliable and highly recommended!",
       company: "Raah to Cure",
       address: "New Delhi, India",
     },
     {
       message:
-        "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "We are extremely satisfied with the services provided by Z-Rehman Infotech. From the initial consultation to the final delivery, their team showed great attention to detail and ensured that all our requirements were met. The entire process was smooth, efficient, and stress-free.",
       company: "Get Core",
       address: "Moradabad, India",
     },
     {
       message:
-        "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "Z-Rehman Infotech consistently exceeded our expectations. Their development team was skilled, proactive, and responsive throughout the project. They were always available to answer our queries and provided valuable suggestions that improved the overall quality of the project. Highly recommended for anyone seeking expert IT solutions.",
       company: "Saloon SP",
       address: "Rampur, India",
     },
     {
       message:
-        "Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.",
+        "The team at Z-Rehman Infotech demonstrated exceptional expertise and dedication. They handled our complex requirements with precision and delivered a final product that perfectly aligned with our vision. Their professionalism, prompt updates, and commitment to quality made the entire collaboration a truly positive experience.",
       company: "ZTO",
       address: "Delhi, India",
     },
@@ -49,7 +49,7 @@ export default function Feedback() {
 
 function FeedbackComp({ data }) {
   return (
-    <div className="border-2 border-black text-black max-w-64 shrink-0 flex flex-col gap-6 rounded-xl border-[1px] border-black p-6 shadow-[0px_0px_20px_2px] shadow-gray-200">
+    <div className="border-2 border-black text-black max-w-64 shrink-0 flex flex-col gap-6 rounded-xl border-[1px] border-black p-6 shadow-[0px_0px_20px_2px] shadow-gray-200 justify-between">
       <div>
         <div>⭐⭐⭐⭐⭐</div>
         <p>{data.message}</p>
