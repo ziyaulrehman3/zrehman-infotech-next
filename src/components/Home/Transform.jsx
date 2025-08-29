@@ -15,7 +15,7 @@ export default function Transform() {
         </p>
 
         <Link href="/contact-us">
-          <ButtonNormal text="Get Started" />
+          <ButtonNormal text="Get Started" url="contact-us" />
         </Link>
       </div>
     </div>
